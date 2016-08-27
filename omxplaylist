@@ -2,9 +2,6 @@
 
 IFS=$'\n'
 
-# Testing git
-# Auth Test
-
 # Colors
 GREEN='\033[0;32m'
 RED='\033[0;31m'
