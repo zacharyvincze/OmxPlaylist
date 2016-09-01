@@ -2,6 +2,8 @@
 
 IFS=$'\n'
 
+source omxplaylist.cfg
+
 # Colors
 GREEN='\033[0;32m'
 RED='\033[0;31m'
@@ -16,7 +18,7 @@ if [ -z "$VIDEOPATH" ]; then VIDEOPATH="."; fi
 
 if [ ! -d "$VIDEOPATH" ]; then echo -e $'\n' "${RED}ERROR:${NC} The directory $VIDEOPATH could not be found" $'\n'; exit 1; fi
 
-SERVICE="omxplayer"
+SERVICE="$service" >&2
 TRACK_NUM=0
 TRACK_AMOUNT=$(ls $VIDEOPATH | egrep $SUPPORTED_FORMATS | wc -l)
 
