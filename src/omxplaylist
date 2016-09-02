@@ -2,7 +2,7 @@
 
 IFS=$'\n'
 
-source $HOME/.config/omxplaylist.cfg
+source $HOME/.config/omxplaylist/omxplaylist.cfg
 
 # Colors
 GREEN='\033[0;32m'
